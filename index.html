@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h3><strong>Actividad 7: Solicitud de email y password</strong></h3>
+    <input id="Email" type="text" placeholder="Coloca tu Email">
+    <input id="Contraseña" type="password" placeholder="Coloca tu Contraseña">
+    <button onclick ="Comprobar()">COMPROBAR</button>
+    <p id="Resultado"></p>
+    <script>
+        function Comprobar() {
+            let Email = document.getElementById("Email").value
+            let Contraseña = document.getElementById("Contraseña").value
+
+            if (Email == "Raulalfredoleon778@gmail.com" && Contraseña == "Ralpoo2101") {
+                document.getElementById("Resultado").innerHTML = 'La contraseña y El Email Ingresados Son Correctos! (❁´◡`❁)';
+            }
+            else {
+                document.getElementById("Resultado").innerHTML = 'La contraseña y El Email Ingresados Son Incorrectos -_-';
+            }
+        }
+    </script>
+</body>
+</html>
